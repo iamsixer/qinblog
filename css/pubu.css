@@ -1,0 +1,49 @@
+body {
+    padding:0;
+    margin:0;
+    background:url(../images/bg.jpg);
+}
+img {
+    border:none;
+}
+a {
+    text-decoration: none;
+}
+#pubu {
+	margin:0 auto;
+	position:relative;
+}
+#pubu .box {
+	width:380px;
+	height:auto;
+	padding:10px;
+	float:left;
+}
+#pubu .box .pic {
+	width:380px;
+	height:auto;
+    box-shadow:1px 1px 4px #ddd,-1px -1px 4px #ddd;
+    border-radius:4px;
+}
+#pubu .box .pic img {
+    display: block;
+	width:350px;
+    margin:0 auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+/*回到顶部*/
+#arrow_up {
+	curosr: pointer;
+	display: none;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	width: 90px;
+	height: 90px;
+	z-index: 60;
+	_position: absolute;
+ _right:expression(eval(document.documentElement.scrollright+1000));
+ _top:expression(eval(document.documentElement.scrollTop+700));
+}
